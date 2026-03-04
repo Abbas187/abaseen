@@ -1,0 +1,99 @@
+.footer {
+    background: var(--primary);
+    color: white;
+    padding: 6rem 0 2rem;
+}
+
+.top {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1.5fr;
+    gap: 4rem;
+    margin-bottom: 4rem;
+}
+
+.brand h2 {
+    font-size: 1.8rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 1.5rem;
+}
+
+.brand p {
+    color: #999;
+    font-size: 0.9rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    max-width: 300px;
+}
+
+.socials {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.socials a {
+    color: #999;
+    transition: color 0.3s ease;
+}
+
+.socials a:hover {
+    color: var(--secondary);
+}
+
+.links h3 {
+    font-size: 0.8rem;
+    letter-spacing: 0.1em;
+    margin-bottom: 2rem;
+    color: #fff;
+}
+
+.links a,
+.links p {
+    display: block;
+    font-size: 0.85rem;
+    color: #999;
+    margin-bottom: 1rem;
+    transition: color 0.3s ease;
+}
+
+.links a:hover {
+    color: white;
+}
+
+.bottom {
+    padding-top: 2rem;
+    border-top: 1px solid #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.75rem;
+    color: #666;
+}
+
+.paymentBadges {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.divider {
+    color: #333;
+}
+
+@media (max-width: 1024px) {
+    .top {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .top {
+        grid-template-columns: 1fr;
+    }
+
+    .bottom {
+        flex-direction: column;
+        gap: 1.5rem;
+        text-align: center;
+    }
+}

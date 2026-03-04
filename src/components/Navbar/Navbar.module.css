@@ -1,0 +1,102 @@
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: white;
+    width: 100%;
+}
+
+.topBar {
+    background: var(--primary);
+    color: white;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 0.7rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+}
+
+.mainNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 4rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    color: var(--primary);
+}
+
+.navLinks {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.navLinks a {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    transition: color 0.3s ease;
+}
+
+.navLinks a:hover {
+    color: var(--secondary);
+}
+
+.navIcons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.cartIcon {
+    position: relative;
+}
+
+.cartCount {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    background: var(--secondary);
+    color: white;
+    font-size: 0.6rem;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobileMenu {
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .mainNav {
+        padding: 1rem 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .navLinks {
+        display: none;
+    }
+
+    .mobileMenu {
+        display: block;
+    }
+
+    .mainNav {
+        padding: 1rem;
+    }
+
+    .logo {
+        font-size: 1.4rem;
+    }
+}
